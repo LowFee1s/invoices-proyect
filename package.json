@@ -1,0 +1,27 @@
+{
+  "name": "invoices-proyect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "invoices",
+    "Web"
+  ],
+  "author": "Jav1er",
+  "license": "ISC",
+  "description": "Este es la REST API, del proyecto de facturas para la empresa MOCARR STEEL",
+  "devDependencies": {
+    "nodemon": "3.1.4"
+  },
+  "dependencies": {
+    "cookie-parser": "1.4.6",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "jsonwebtoken": "9.0.2",
+    "uuid": "10.0.0"
+  }
+}
