@@ -1,0 +1,90 @@
+{
+    "clients": [
+      {
+        "id": 1,
+        "name": "Acme Corporation",
+        "contact": {
+          "email": "info@acme.com",
+          "phone": "+1 555-123-4567"
+        },
+        "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "98765"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Widgets Inc.",
+        "contact": {
+          "email": "sales@widgetsinc.com",
+          "phone": "+1 555-987-6543"
+        },
+        "address": {
+          "street": "456 Elm Ave",
+          "city": "Smallville",
+          "state": "NY",
+          "zip": "54321"
+        }
+      },
+      {
+        "id": 3,
+        "name": "erttert Incqreerq.",
+        "contact": {
+          "email": "sales@widgetsinc.com",
+          "phone": "+1 555-987-6543"
+        },
+        "address": {
+          "street": "456 Elm Ave",
+          "city": "Smallville",
+          "state": "NY",
+          "zip": "54321"
+        }
+      },
+      {
+        "id": 4,
+        "name": "asd Inc143433.",
+        "contact": {
+          "email": "sales@widgetsinc.com",
+          "phone": "+1 555-987-6543"
+        },
+        "address": {
+          "street": "456 Elm Ave",
+          "city": "Smallville",
+          "state": "NY",
+          "zip": "54321"
+        }
+      },
+      {
+        "name": "ROYAL LALALLA",
+        "contact": {
+          "email": "sales@widgetsinc.com",
+          "phone": "+1 555-987-6543"
+        },
+        "address": {
+          "street": "456 Elm Ave",
+          "city": "Smallville",
+          "state": "NY",
+          "zip": "54321"
+        },
+        "id": "13c13e69-71e6-4460-acb8-f2d64ad6b45f",
+        "createAt": "7/15/2024, 10:39:37 PM"
+      },
+      {
+        "name": "ROYAL LALALLA43535353535353535",
+        "contact": {
+          "email": "sales@widgetsinc.com",
+          "phone": "+1 555-987-6543"
+        },
+        "address": {
+          "street": "456 Elm Ave",
+          "city": "Smallville",
+          "state": "NY",
+          "zip": "54321"
+        },
+        "id": "c3354881-0850-414c-aea6-22b934fee911",
+        "createAt": "7/15/2024, 10:40:02 PM"
+      }
+    ]
+  }
