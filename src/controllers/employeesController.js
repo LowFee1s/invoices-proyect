@@ -21,7 +21,7 @@ const getEmployeeById = async (req, res) => {
 const createNewEmployee = async (req, res) => {
     const { body } = req;
 
-    if (!body.name || !body.apellidos || !body.direccion || !body.email || !body.rfc || !body.telefono) {
+    if (!body.name || !body.apellidos || !body.direccion || !body.email || !body.rfc || !body.tipo_empleado || !body.telefono) {
         res.status(400).send({ error: 'Falta informacion en el body' });
         return;
     }
@@ -32,6 +32,7 @@ const createNewEmployee = async (req, res) => {
         direccion: body.direccion,
         email: body.email,
         rfc: body.rfc,
+        tipo_empleado: body.tipo_empleado,
         telefono: body.telefono,
     };
 

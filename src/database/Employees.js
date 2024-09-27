@@ -41,8 +41,8 @@ const createNewEmployee = async (newEmployee) => {
    
     try {
         // Prepare the SQL statement using parameterized queries
-        const sql = 'INSERT INTO empleados (Id_Empleado, Nombres, Apellidos, Direccion, Telefono, Email, RFC, Fecha_Creado) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-        const values = [newEmployee.id, newEmployee.name, newEmployee.apellidos, newEmployee.direccion, newEmployee.telefono, newEmployee.email, newEmployee.rfc, newEmployee.createAt];
+        const sql = 'INSERT INTO empleados (Id_Empleado, Nombres, Apellidos, Direccion, Telefono, Email, RFC, Tipo_Empleado, Fecha_Creado) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
+        const values = [newEmployee.id, newEmployee.name, newEmployee.apellidos, newEmployee.direccion, newEmployee.telefono, newEmployee.email, newEmployee.rfc, newEmployee.tipo_empleado, newEmployee.createAt];
     
         // Execute the query with async/await for better error handling
         const result = await connection.query(sql, values);

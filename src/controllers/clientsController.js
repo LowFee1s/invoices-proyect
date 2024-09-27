@@ -21,7 +21,7 @@ const getClientById = async (req, res) => {
 const createNewClient = async (req, res) => {
     const { body } = req;
 
-    if (!body.name || !body.apellidos || !body.direccion || !body.email || !body.telefono) {
+    if (!body.name || !body.apellidos || !body.direccion || !body.email || !body.tipo_cliente || !body.telefono) {
         res.status(400).send({ error: 'Falta informacion en el body' });
         return;
     }
@@ -31,6 +31,7 @@ const createNewClient = async (req, res) => {
         apellidos: body.apellidos,
         direccion: body.direccion,
         email: body.email,
+        tipo_cliente: body.tipo_cliente,
         telefono: body.telefono,
     };
 
