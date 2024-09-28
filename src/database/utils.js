@@ -8,7 +8,7 @@ const saveToDb = (db) => {
 }
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: process.env.USER_HOST,
   user: process.env.USER_NAME,
   password: process.env.USER_PASS,
   database: process.env.USER_DB
