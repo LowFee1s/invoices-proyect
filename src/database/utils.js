@@ -7,12 +7,7 @@ const saveToDb = (db) => {
     });
 }
 
-const connection = mysql.createConnection({
-  host: process.env.USER_HOST,
-  user: process.env.USER_NAME,
-  password: process.env.USER_PASS,
-  database: process.env.USER_DB
-});
+const connection = mysql.createConnection('mysql://root:tqLVAsoQhfisYFmXSGMSnphiBadBSJNQ@junction.proxy.rlwy.net:48150/railway');
 
 connection.connect((err) => {
   if (err) throw err;
