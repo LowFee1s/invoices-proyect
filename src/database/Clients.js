@@ -45,7 +45,7 @@ const createNewClient = async (newClient) => {
         const values = [newClient.id, newClient.name, newClient.apellidos, newClient.direccion, newClient.telefono, newClient.email, newClient.tipo_cliente, newClient.createAt];
     
         // Execute the query with async/await for better error handling
-        const result = await connection.query(sql, values);
+        const result = await connection.promise().query(sql, values);
     
         // Log the results for debugging purposes
         console.log("Usuario creado correctamente!");
@@ -77,7 +77,7 @@ const deleteClientById = async (id) => {
         }
     
         // Delete the client
-        const result = await connection.query('DELETE FROM clientes WHERE Id_Cliente = ?', [id]);
+        const result = await connection.promise().query('DELETE FROM clientes WHERE Id_Cliente = ?', [id]);
     
         if (result.affectedRows === 0) {
           throw new Error('Error deleting client');
