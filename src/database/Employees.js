@@ -45,7 +45,7 @@ const createNewEmployee = async (newEmployee) => {
         const values = [newEmployee.id, newEmployee.name, newEmployee.apellidos, newEmployee.direccion, newEmployee.telefono, newEmployee.email, newEmployee.rfc, newEmployee.tipo_empleado, newEmployee.createAt];
     
         // Execute the query with async/await for better error handling
-        const result = await connection.query(sql, values);
+        const result = await connection.promise().query(sql, values);
     
         // Log the results for debugging purposes
         console.log("Usuario creado correctamente!");
@@ -77,7 +77,7 @@ const deleteEmployeeById = async (id) => {
         }
     
         // Delete the employee
-        const result = await connection.query('DELETE FROM empleados WHERE Id_Empleado = ?', [id]);
+        const result = await connection.promise().query('DELETE FROM empleados WHERE Id_Empleado = ?', [id]);
     
         if (result.affectedRows === 0) {
           throw new Error('Error deleting employee');
