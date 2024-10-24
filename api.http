@@ -1,23 +1,43 @@
 POST http://localhost:3000/api/version-1/invoices/
 Content-Type: application/json
 
+# {
+#   "name": "ds",
+#   "apellidos": "ds",
+#   "direccion": "ds",
+#   "email": "sd",
+#   "rfc": "ds",
+#   "password": "23",
+#   "tipo_empleado": "jefe",
+#   "telefono": "24234234"
+# }
+
+# {
+#   "name": "body2",
+#   "apellidos": "bo23s",
+#   "direccion": "body.23ireccion",
+#   "email": "b23il",
+#   "tipo_cliente": "asistente",
+#   "telefono": "123123"
+# }
+
 {
-    "cliente": "Juan",
-    "empleado": "Juan",
+    "cliente": "7a12dde3-1d9e-4264-ad29-1a9ae70d0547",
+    "empleado": "8da5798e-44dc-4261-90be-8a50cab16b0d",
     "modo_pago": 1,
     "usocliente_CDFI": "G03",
     "regimenfiscal_CDFI": "612",
     "estatus": "PENDIENTE",
     "detalles": [
         {
-            "idproducto": 123,
+            "idproducto": "AR1",
             "cantidad": 2,
-            "precio_unitario": 19.99
+            "precio_unitario": 1400.00
         },
         {
-            "idproducto": 456,
+            "idproducto": "AR1",
             "cantidad": 5,
-            "precio_unitario": 10.50
+            "precio_unitario": 1400.00
         }
     ]
 }
