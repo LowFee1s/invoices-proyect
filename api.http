@@ -1,1 +1,23 @@
-DELETE http://localhost:3000/api/version-1/clients/234
+POST http://localhost:3000/api/version-1/invoices/
+Content-Type: application/json
+
+{
+    "cliente": "Juan",
+    "empleado": "Juan",
+    "modo_pago": 1,
+    "usocliente_CDFI": "G03",
+    "regimenfiscal_CDFI": "612",
+    "estatus": "PENDIENTE",
+    "detalles": [
+        {
+            "idproducto": 123,
+            "cantidad": 2,
+            "precio_unitario": 19.99
+        },
+        {
+            "idproducto": 456,
+            "cantidad": 5,
+            "precio_unitario": 10.50
+        }
+    ]
+}
